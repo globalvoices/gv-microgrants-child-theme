@@ -9,6 +9,12 @@
 if (is_object($gv)) :
 
 	/**
+	 * Define GV_LINGUA as false to override the TRUE definition in the projects theme 
+	 */
+	if (!defined('GV_LINGUA'))
+		define('GV_LINGUA',  FALSE);
+
+	/**
 	 * Define an image to show in the header.
 	 * Project theme generic has none, so it will use site title
 	 */
