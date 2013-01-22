@@ -90,6 +90,27 @@ if (is_object($gv)) :
 	add_action('init', 'gv_microgrants_register_postmeta_inserts');
 
 	/**
+	 * Insert "Long Description" h3 above post content
+	 * 
+	 * Used to make post body match style of fields inserted above it 
+	 * by gv_register_postmeta_field
+	 * 
+	 * @global object $post Post object who's content is being filtered
+	 * @param string $content Post content to filter
+	 * @return string Filtered content
+	 */
+	function gv_microgrants_add_long_description_top_of_content($content) {
+		global $post;
+		if (is_admin() OR ('post' != $post->post_type))
+			return $content;
+		
+		$content = "<h3>Long Description</h3>" . $content;
+		
+		return $content;
+	}
+	add_filter('the_content', 'gv_microgrants_add_long_description_top_of_content');
+	
+	/**
 	 * Define an image to show in the header.
 	 * Project theme generic has none, so it will use site title
 	 */
