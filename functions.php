@@ -62,6 +62,8 @@ if (is_object($gv)) :
 
 	/**
 	 * Register postmeta inserts
+	 * 
+	 * These will be auto-inserted into post content
 	 */
 	function gv_microgrants_register_postmeta_inserts() {
 
@@ -69,9 +71,20 @@ if (is_object($gv)) :
 			return;
 
 		gv_register_postmeta_insert(array(
+			'field_name' => 'excerpt',
+			'label' => 'Short Description',
+			'position' => 'top',
+		));
+		gv_register_postmeta_insert(array(
 			'field_name' => 'leader-skills',
 			'label' => 'Leadership Skills Available',
-			'position' => 'top',
+			'position' => 'bottom',
+		));
+		gv_register_postmeta_insert(array(
+			'field_name' => 'proposal-url',
+			'label' => 'Link to Existing Project',
+			'position' => 'bottom',
+			'display' => 'url',
 		));
 	}
 	add_action('init', 'gv_microgrants_register_postmeta_inserts');
