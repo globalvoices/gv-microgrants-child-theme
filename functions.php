@@ -15,6 +15,62 @@ if (is_object($gv)) :
 		define('GV_LINGUA',  FALSE);
 
 	/**
+	 * Register custom postmeta fields with the Custom Medatata Manager plugin
+	 *
+	 * Convert to some other format if this ever stops working
+	 */
+	function gv_microgrants_custom_metadata_manager_admin_init() {
+		/**
+		 * Exit if the plugin isn't present
+		 */
+		if(!function_exists( 'x_add_metadata_field' ) OR !function_exists( 'x_add_metadata_group' ) )
+			return;
+		/**
+		 * Register a group for pages and posts
+		 */
+		x_add_metadata_group('gv_custom_metadata_posts', array('post'), array(
+			'label' => 'GV Custom Metadata',
+			'priority' => 'high',
+		));
+		/**
+		 * Page Excerpt field, pages only
+		 */
+		x_add_metadata_field( 'leader-skills', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Leadership Skills',
+			'field_type' => 'text',
+		));
+
+
+
+	//	/**
+	//	 * Hide creation/update dates, pages only
+	//	 */
+	//	x_add_metadata_field('gv-hide-dates', array( 'page'), array(
+	//		'group' => 'gv_custom_metadata_posts',
+	//		'label' => 'Hide dates on post (creation and last updated)',
+	//		'field_type' => 'checkbox',
+	//	));	
+	}
+	add_action( 'admin_init', 'gv_microgrants_custom_metadata_manager_admin_init' );
+
+	/**
+	 * Register postmeta inserts
+	 */
+	function gv_microgrants_register_postmeta_inserts() {
+
+		if (!function_exists('gv_register_postmeta_insert'))
+			return;
+
+		gv_register_postmeta_insert(array(
+			'field_name' => 'leader-skills',
+			'label' => 'Leadership Skills Available',
+			'position' => 'top',
+		));
+	}
+	add_action('init', 'gv_microgrants_register_postmeta_inserts');
+
+	/**
 	 * Define an image to show in the header.
 	 * Project theme generic has none, so it will use site title
 	 */
