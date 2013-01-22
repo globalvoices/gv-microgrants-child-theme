@@ -33,15 +33,21 @@ if (is_object($gv)) :
 			'priority' => 'high',
 		));
 		/**
-		 * Page Excerpt field, pages only
+		 * Leader skills
 		 */
 		x_add_metadata_field( 'leader-skills', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
 			'label' => 'Leadership Skills',
 			'field_type' => 'text',
 		));
-
-
+		/**
+		 * Project website URL
+		 */
+		x_add_metadata_field( 'proposal-url', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Proposal URL',
+			'field_type' => 'text',
+		));
 
 	//	/**
 	//	 * Hide creation/update dates, pages only
