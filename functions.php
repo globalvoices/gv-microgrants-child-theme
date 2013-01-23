@@ -71,20 +71,25 @@ if (is_object($gv)) :
 			return;
 
 		gv_register_postmeta_insert(array(
-			'field_name' => 'excerpt',
+			'postmeta_field_name' => 'excerpt',
 			'label' => 'Short Description',
 			'position' => 'top',
 		));
 		gv_register_postmeta_insert(array(
-			'field_name' => 'leader-skills',
+			'postmeta_field_name' => 'leader-skills',
 			'label' => 'Leadership Skills Available',
 			'position' => 'bottom',
 		));
 		gv_register_postmeta_insert(array(
-			'field_name' => 'proposal-url',
+			'postmeta_field_name' => 'proposal-url',
 			'label' => 'Link to Existing Project',
 			'position' => 'bottom',
 			'display' => 'url',
+		));
+		gv_register_postmeta_insert(array(
+			'taxonomy' => 'gv_geo',
+			'label' => 'Country',
+			'position' => 'bottom',
 		));
 	}
 	add_action('init', 'gv_microgrants_register_postmeta_inserts');
