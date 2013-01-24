@@ -167,11 +167,6 @@ if (isset($gv) AND is_object($gv)) :
 			return;
 
 		gv_register_postmeta_insert(array(
-			'postmeta_field_name' => 'excerpt',
-			'label' => 'Short Description',
-			'position' => 'top',
-		));
-		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'leader-skills',
 			'label' => 'Leadership Skills Available',
 			'position' => 'bottom',
