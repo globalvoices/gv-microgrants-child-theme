@@ -295,7 +295,19 @@ if (isset($gv) AND is_object($gv)) :
 		 * Register geo taxonomy for posts
 		 */
 		register_taxonomy('gv_geo', 'gv_geo', array(
-			'label' => 'Region Categories',
+			'labels' => array(
+				    'name' => _x( 'Region Categories', 'taxonomy general name' ),
+				    'singular_name' => _x( 'Region Category', 'taxonomy singular name' ),
+				    'search_items' =>  __( 'Search Region Categories' ),
+				    'all_items' => __( 'All Region Categories' ),
+				    'parent_item' => __( 'Parent Region Category' ),
+				    'parent_item_colon' => __( 'Parent Region Category:' ),
+				    'edit_item' => __( 'Edit Region Category' ), 
+				    'update_item' => __( 'Update Region Category' ),
+				    'add_new_item' => __( 'Add New Region Category' ),
+				    'new_item_name' => __( 'New Region Category name' ),
+				    'menu_name' => __( 'Region Categories' ),
+				  ),			
 			'public' => true,
 			'show_ui' => true,
 			'hierarchical' => true,
