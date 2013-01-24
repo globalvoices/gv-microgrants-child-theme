@@ -15,6 +15,12 @@ if (isset($gv) AND is_object($gv)) :
 		define('GV_LINGUA',  FALSE);
 	
 	/**
+	 * Define excerpt length
+	 */
+	if (!defined('GV_EXCERPT_LENGTH'))
+		define('GV_EXCERPT_LENGTH', 999);
+	
+	/**
 	 * Register custom postmeta fields with the Custom Medatata Manager plugin
 	 *
 	 * Convert to some other format if this ever stops working
