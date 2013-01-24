@@ -6,7 +6,7 @@
  * This code will run before the functions.php in that theme.
  */
 
-if (is_object($gv)) :
+if (isset($gv) AND is_object($gv)) :
 
 	/**
 	 * Define GV_LINGUA as false to override the TRUE definition in the projects theme 
