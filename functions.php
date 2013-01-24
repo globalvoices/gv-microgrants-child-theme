@@ -33,20 +33,116 @@ if (isset($gv) AND is_object($gv)) :
 			'priority' => 'high',
 		));
 		/**
-		 * Leader skills
+		 * Proposal Community
 		 */
-		x_add_metadata_field( 'leader-skills', array('post'), array(
+		x_add_metadata_field( 'proposal-community', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Leadership Skills',
+			'label' => 'Describe the specific community with whom you will be working',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Convent Vision
+		 */
+		x_add_metadata_field( 'proposal-content-vision', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'What kinds of news, stories and other content will be created?',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Tools
+		 */
+		x_add_metadata_field( 'proposal-tools', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Describe the technologies and digital tools that the project participants will use to produce the content?',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Connections
+		 */
+		x_add_metadata_field( 'proposal-connections', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Describe the connections that you or your organization have already established that will contribute to the success of the project',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Participants
+		 */
+		x_add_metadata_field( 'proposal-participants', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'How many participants do you think will be involved in your project?',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal City
+		 */
+		x_add_metadata_field( 'proposal-city', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'What locality or neighborhood will your project focus on?',
 			'field_type' => 'text',
 		));
 		/**
-		 * Project website URL
+		 * Proposal Contact
+		 */
+		x_add_metadata_field( 'proposal-contact', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Contact name',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Email
+		 */
+		x_add_metadata_field( 'proposal-email', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Your email address',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Organization
+		 */
+		x_add_metadata_field( 'proposal-organization', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Organization',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal URL
 		 */
 		x_add_metadata_field( 'proposal-url', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Proposal URL',
+			'label' => 'Project website URL',
 			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Twitter
+		 */
+		x_add_metadata_field( 'proposal-twitter', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Twitter URL',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Facebook
+		 */
+		x_add_metadata_field( 'proposal-facebook', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Facebook URL',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Private
+		 */
+		x_add_metadata_field( 'proposal-private', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Don\'t publish this proposal',
+			'field_type' => 'checkbox',
+		));
+		/**
+		 * Proposal Privacy Reason
+		 */
+		x_add_metadata_field( 'proposal-privacy-reason', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Why don\'t you want us to publish your proposal?',
+			'field_type' => 'textarea',
 		));
 
 	//	/**
