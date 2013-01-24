@@ -13,7 +13,7 @@ if (isset($gv) AND is_object($gv)) :
 	 */
 	if (!defined('GV_LINGUA'))
 		define('GV_LINGUA',  FALSE);
-
+	
 	/**
 	 * Register custom postmeta fields with the Custom Medatata Manager plugin
 	 *
@@ -167,10 +167,77 @@ if (isset($gv) AND is_object($gv)) :
 			return;
 
 		gv_register_postmeta_insert(array(
-			'postmeta_field_name' => 'leader-skills',
-			'label' => 'Leadership Skills Available',
+			'taxonomy' => 'gv_topics',
+			'label' => 'Topical focus:',
 			'position' => 'bottom',
 		));
+		
+		gv_register_postmeta_insert(array(
+			'taxonomy' => 'gv_geo',
+			'label' => 'Country:',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-city',
+			'label' => 'What locality or neighborhood will your project focus on?',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-community',
+			'label' => 'Describe the specific community with whom you will be working.',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-content-vision',
+			'label' => 'What kinds of news, stories and other content will be created?',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-tools',
+			'label' => 'Describe the technologies and digital tools that the project participants will use to produce the content?',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'taxonomy' => 'gv_tools',
+			'label' => 'Tools:',
+			'position' => 'bottom',
+		));		
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-connections',
+			'label' => 'Describe the connections that you or your organization have already established that will contribute to the success of the project.',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-participants',
+			'label' => 'How many participants do you think will be involved in your project?',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-contact',
+			'label' => 'Contact name',
+			'position' => 'bottom',
+		));
+		
+//		gv_register_postmeta_insert(array(
+//			'postmeta_field_name' => 'proposal-email',
+//			'label' => 'Your email address',
+//			'position' => 'bottom',
+//		));
+
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-organization',
+			'label' => 'Organization',
+			'position' => 'bottom',
+		));
+		
 		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-url',
 			'label' => 'Link to Existing Project',
@@ -178,10 +245,18 @@ if (isset($gv) AND is_object($gv)) :
 			'display' => 'url',
 		));
 		gv_register_postmeta_insert(array(
-			'taxonomy' => 'gv_geo',
-			'label' => 'Country',
+			'postmeta_field_name' => 'proposal-twitter',
+			'label' => 'Twitter URL',
 			'position' => 'bottom',
+			'display' => 'url',
 		));
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-facebook',
+			'label' => 'Facebook URL',
+			'position' => 'bottom',
+			'display' => 'url',
+		));
+
 	}
 	add_action('init', 'gv_microgrants_register_postmeta_inserts');
 
@@ -204,7 +279,7 @@ if (isset($gv) AND is_object($gv)) :
 		
 		return $content;
 	}
-	add_filter('the_content', 'gv_microgrants_add_long_description_top_of_content');
+//	add_filter('the_content', 'gv_microgrants_add_long_description_top_of_content');
 	
 	/**
 	 * Register taxonomies for this site
