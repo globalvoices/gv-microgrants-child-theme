@@ -116,6 +116,62 @@ if (isset($gv) AND is_object($gv)) :
 	add_filter('the_content', 'gv_microgrants_add_long_description_top_of_content');
 	
 	/**
+	 * Register taxonomies for this site
+	 */
+	function gv_microgrants_register_taxonomies() {
+		/**
+		 * Register geo taxonomy for posts
+		 */
+		register_taxonomy('gv_geo', 'gv_geo', array(
+			'label' => 'Region Categories',
+			'public' => true,
+			'show_ui' => true,
+			'hierarchical' => true,
+			'rewrite' => 'geo',
+		));
+		register_taxonomy_for_object_type('gv_geo', 'post');
+		
+		/**
+		 * Register Topics taxonomy
+		 */
+		register_taxonomy('gv_topics', 'gv_topics', array(
+			'label' => 'Topic Categories',
+			'public' => true,
+			'show_ui' => true,
+			'hierarchical' => true,
+			'rewrite' => 'topic',
+		));
+		register_taxonomy_for_object_type('gv_topics', 'post');
+
+		/**
+		 * Register tool categories
+		 */
+		register_taxonomy('gv_tools', 'gv_tools', array(
+			'label' => 'Tool Categories',
+			'public' => true,
+			'show_ui' => true,
+			'hierarchical' => true,
+			'rewrite' => 'tools',
+		));
+		register_taxonomy_for_object_type('gv_tools', 'post');
+//
+//		$test_tax = 'gv_test6';
+//		register_taxonomy($test_tax, $test_tax, array(
+//			'label' => $test_tax,
+//			'public' => true,
+//			'show_ui' => true,
+//			'hierarchical' => true,
+//			'rewrite' => 'tools',
+//		));
+//		register_taxonomy_for_object_type($test_tax, 'post');
+//		echor(wp_count_terms('gv_geo'));
+		
+	}
+	add_filter('init', 'gv_microgrants_register_taxonomies');
+	
+
+	
+	/**
 	 * Define an image to show in the header.
 	 * Project theme generic has none, so it will use site title
 	 */
@@ -185,7 +241,7 @@ if (isset($gv) AND is_object($gv)) :
 //		),
 //	);
 
-
+	
 endif; // is_object($gv)
 
 ?>
