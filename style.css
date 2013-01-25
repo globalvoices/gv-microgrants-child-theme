@@ -42,6 +42,8 @@ h3 a {
 .header-menu a,
 #sidebar h2,
 .foot-container,
+.foot-container a,
+.foot-container h2,
 .text-shadow-medium-orange-background {
 	color: #fff;
 	text-shadow: 1px 1px 2px rgb(170, 98, 10);
