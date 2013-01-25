@@ -11,7 +11,45 @@ Template: gv-project-theme
 
 @import url("../gv-project-theme/style.css");
 
+/* @group Colors */
+#ORANGE-TEXT-MEDIUM,
+a {
+	color: #f7941e;
+}
+#ORANGE-TEXT-DARK,
+a:hover,
+a:active,
+h2 a,
+h3 a {
+	color: #e17a00;
+}
+#MEDIUM-ORANGE-GRADIENT,
+.header-menu-container,
+#sidebar h2,
+.foot-container,
+.medium-grey-gradient {
+/*http://css-tricks.com/examples/CSS3Gradient/*/
+	background-color: #ffa352;
+	border-color: #f78f0f;
+	border-width: 0px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffa352), to(#f78f0f)); /* Safari 4-5, Chrome 1-9 */
+	background: -webkit-linear-gradient(top, #ffa352, #f78f0f); /* Safari 5.1, Chrome 10+ */
+	background: -moz-linear-gradient(top, #ffa352, #f78f0f); /* Firefox 3.6+ */
+	background: -ms-linear-gradient(top, #ffa352, #f78f0f); /* IE 10 */
+	background: -o-linear-gradient(top, #ffa352, #f78f0f); /* Opera 11.10+ */
+}
+#TEXT-SHADOW-MEDIUM-ORANGE-BACKGROUND,
+.header-menu a,
+#sidebar h2,
+.foot-container,
+.text-shadow-medium-orange-background {
+	color: #fff;
+	text-shadow: 1px 1px 2px rgb(170, 98, 10);
+	}
 /*Hide post authors*/
+
+/* @end */
+
 .single .single-credit {
 	/* Hide credits from top of posts and excerpts
 	because the post author did not write the 
