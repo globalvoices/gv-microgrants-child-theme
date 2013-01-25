@@ -10,3 +10,19 @@ Template: gv-project-theme
 */
 
 @import url("../gv-project-theme/style.css");
+
+/*Hide post authors*/
+.single .single-credit {
+	/* Hide credits from top of posts and excerpts
+	because the post author did not write the 
+	proposals*/
+	display: none;
+}
+.single-description {
+/*	Make single post header full width because
+	the credit no longer takes up space*/
+	width: 100%;
+}
+#post-archive .credit-text {
+	display: none;
+}
