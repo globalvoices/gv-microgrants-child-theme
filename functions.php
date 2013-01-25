@@ -21,6 +21,12 @@ if (isset($gv) AND is_object($gv)) :
 		define('GV_EXCERPT_LENGTH', 999);
 	
 	/**
+	 * Define an image to show in the header.
+	 * Project theme generic has none, so it will use site title
+	 */
+	$gv->settings['header_img'] = get_stylesheet_directory_uri() . '/RisingVoices-microgrants2013-600.png';	
+	
+	/**
 	 * Register custom postmeta fields with the Custom Medatata Manager plugin
 	 *
 	 * Convert to some other format if this ever stops working
@@ -385,14 +391,6 @@ if (isset($gv) AND is_object($gv)) :
 	}
 	add_filter('init', 'gv_microgrants_register_taxonomies');
 	
-
-	
-	/**
-	 * Define an image to show in the header.
-	 * Project theme generic has none, so it will use site title
-	 */
-//	$gv->settings['header_img'] = get_bloginfo('template_url') . '/images/advocacy-temptitle2.png';
-
 	/**
 	 * Filter the apple touch icon to be a customized logo
 	 * 
