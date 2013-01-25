@@ -311,8 +311,10 @@ if (isset($gv) AND is_object($gv)) :
 			'public' => true,
 			'show_ui' => true,
 			'hierarchical' => true,
-			'rewrite' => 'geo',
-		));
+			'query_var' => 'geo',
+			'rewrite' => array(
+				'slug' => 'geo'
+			),		));
 		register_taxonomy_for_object_type('gv_geo', 'post');
 		
 		/**
@@ -335,7 +337,10 @@ if (isset($gv) AND is_object($gv)) :
 			'public' => true,
 			'show_ui' => true,
 			'hierarchical' => true,
-			'rewrite' => 'topic',
+			'query_var' => 'topic',
+			'rewrite' => array(
+				'slug' => 'topic'
+			),
 		));
 		register_taxonomy_for_object_type('gv_topics', 'post');
 
@@ -355,10 +360,14 @@ if (isset($gv) AND is_object($gv)) :
 				    'add_new_item' => __( 'Add New Tool Category' ),
 				    'new_item_name' => __( 'New Tool Category name' ),
 				    'menu_name' => __( 'Tool Categories' ),
-				  ),				'public' => true,
+				  ),
+			'public' => true,
 			'show_ui' => true,
 			'hierarchical' => true,
-			'rewrite' => 'tools',
+			'query_var' => 'tools',
+			'rewrite' => array(
+				'slug' => 'tools'
+			),		
 		));
 		register_taxonomy_for_object_type('gv_tools', 'post');
 //
