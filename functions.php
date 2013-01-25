@@ -319,7 +319,19 @@ if (isset($gv) AND is_object($gv)) :
 		 * Register Topics taxonomy
 		 */
 		register_taxonomy('gv_topics', 'gv_topics', array(
-			'label' => 'Topic Categories',
+			'labels' => array(
+				    'name' => _x( 'Topic Categories', 'taxonomy general name' ),
+				    'singular_name' => _x( 'Topic Category', 'taxonomy singular name' ),
+				    'search_items' =>  __( 'Search Topic Categories' ),
+				    'all_items' => __( 'All Topic Categories' ),
+				    'parent_item' => __( 'Parent Topic Category' ),
+				    'parent_item_colon' => __( 'Parent Topic Category:' ),
+				    'edit_item' => __( 'Edit Topic Category' ), 
+				    'update_item' => __( 'Update Topic Category' ),
+				    'add_new_item' => __( 'Add New Topic Category' ),
+				    'new_item_name' => __( 'New Topic Category name' ),
+				    'menu_name' => __( 'Topic Categories' ),
+				  ),			
 			'public' => true,
 			'show_ui' => true,
 			'hierarchical' => true,
@@ -331,8 +343,19 @@ if (isset($gv) AND is_object($gv)) :
 		 * Register tool categories
 		 */
 		register_taxonomy('gv_tools', 'gv_tools', array(
-			'label' => 'Tool Categories',
-			'public' => true,
+			'labels' => array(
+				    'name' => _x( 'Tool Categories', 'taxonomy general name' ),
+				    'singular_name' => _x( 'Tool Category', 'taxonomy singular name' ),
+				    'search_items' =>  __( 'Search Tool Categories' ),
+				    'all_items' => __( 'All Tool Categories' ),
+				    'parent_item' => __( 'Parent Tool Category' ),
+				    'parent_item_colon' => __( 'Parent Tool Category:' ),
+				    'edit_item' => __( 'Edit Tool Category' ), 
+				    'update_item' => __( 'Update Tool Category' ),
+				    'add_new_item' => __( 'Add New Tool Category' ),
+				    'new_item_name' => __( 'New Tool Category name' ),
+				    'menu_name' => __( 'Tool Categories' ),
+				  ),				'public' => true,
 			'show_ui' => true,
 			'hierarchical' => true,
 			'rewrite' => 'tools',
