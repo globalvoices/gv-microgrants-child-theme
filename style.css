@@ -48,10 +48,9 @@ h3 a {
 	color: #fff;
 	text-shadow: 1px 1px 2px rgb(170, 98, 10);
 	}
-/*Hide post authors*/
-
 /* @end */
 
+/*Hide post authors*/
 .single .single-credit {
 	/* Hide credits from top of posts and excerpts
 	because the post author did not write the 
