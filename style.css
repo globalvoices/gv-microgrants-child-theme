@@ -13,12 +13,13 @@ Template: gv-project-theme
 
 /* @group Colors */
 #ORANGE-TEXT-MEDIUM,
-a {
-	color: #f7941e;
+a:hover,
+a:active  {
+	color: #f7941e; /*Orange*/
+/*	color: #e17a00;*/
 }
 #ORANGE-TEXT-DARK,
-a:hover,
-a:active,
+a,
 h2 a,
 h3 a {
 	color: #e17a00;
