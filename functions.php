@@ -376,17 +376,55 @@ if (isset($gv) AND is_object($gv)) :
 			),		
 		));
 		register_taxonomy_for_object_type('gv_tools', 'post');
-//
-//		$test_tax = 'gv_test6';
-//		register_taxonomy($test_tax, $test_tax, array(
-//			'label' => $test_tax,
-//			'public' => true,
-//			'show_ui' => true,
-//			'hierarchical' => true,
-//			'rewrite' => 'tools',
-//		));
-//		register_taxonomy_for_object_type($test_tax, 'post');
-//		echor(wp_count_terms('gv_geo'));
+
+		/**
+		 * Register "public taxonomies" for gv_taxonomies system to display automatically on posts
+		 */
+		// Unregister defaults as they aren't useful for this site
+		gv_unregister_public_taxonomy('category');
+		gv_unregister_public_taxonomy('post_tag');	
+		
+		/**
+		 * "Regions" taxonomy based on parentless members of gv_geo
+		 */
+		gv_register_public_taxonomy('gv_geo', array(
+			'subtaxonomy_slug' => 'region',
+			'parent' => 'none',
+		));
+		
+		/**
+		 * "Countries" taxonomy based on parentless members of gv_geo
+		 */
+		gv_register_public_taxonomy('gv_geo', array(
+			'subtaxonomy_slug' => 'country',
+			'grandparent' => 'none',
+		));
+		
+		/**
+		 * register our topics and tools taxonomies as public
+		 */
+		gv_register_public_taxonomy('gv_topics');
+		gv_register_public_taxonomy('gv_tools');
+	
+		/**
+		 * Filter gv_display_post_terms $before arg to remove middot 
+		 * 
+		 * Needed because we hide the author with CSS so there's nothing before it
+		 * 
+		 * @see gv_taxonomies::display_post_terms() where this filter is called
+		 * @param string $before HTML string passed to display_post_terms for us to filter
+		 * @param aray $args Args passed to display_post_terms for context checking
+		 * @return string Filtered before text
+		 */
+		function gv_news_filter_display_post_terms_before($before, $args) {
+			
+			// Only set limit if we're on inline format
+			if ('inline' == $args['format'])
+				$before = str_replace ('&middot;', 'Categories: ', $before);
+			
+			return $before;
+		}
+		add_filter('gv_display_post_terms_before', 'gv_news_filter_display_post_terms_before', 10, 2);
 		
 	}
 	add_filter('init', 'gv_microgrants_register_taxonomies');
