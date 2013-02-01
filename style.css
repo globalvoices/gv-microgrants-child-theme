@@ -11,7 +11,6 @@ Template: gv-project-theme
 
 @import url("../gv-project-theme/style.css");
 
-/* @group Colors */
 #ORANGE-TEXT-MEDIUM,
 a:hover,
 a:active  {
@@ -21,8 +20,14 @@ a:active  {
 #ORANGE-TEXT-DARK,
 a,
 h2 a,
-h3 a {
+h3 a
+.text-orange-dark {
 	color: #e17a00;
+}
+#TEXT-BLUE-MEDIUM,
+.post a,
+.text-blue-medium {
+	color: #417eb9;	
 }
 #MEDIUM-ORANGE-GRADIENT,
 .header-menu-container,
@@ -49,7 +54,6 @@ h3 a {
 	color: #fff;
 	text-shadow: 1px 1px 2px rgb(170, 98, 10);
 	}
-/* @end */
 
 /*Hide post authors*/
 .single .single-credit {
