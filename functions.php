@@ -390,6 +390,10 @@ if (isset($gv) AND is_object($gv)) :
 		gv_register_public_taxonomy('gv_geo', array(
 			'subtaxonomy_slug' => 'region',
 			'parent' => 'none',
+			'labels' => array(
+				'name' => _lingua('regions'), 
+				'singular_name' => 'Region',
+			),
 		));
 		
 		/**
@@ -398,6 +402,10 @@ if (isset($gv) AND is_object($gv)) :
 		gv_register_public_taxonomy('gv_geo', array(
 			'subtaxonomy_slug' => 'country',
 			'grandparent' => 'none',
+			'labels' => array(
+				'name' => _lingua('countries'), 
+				'singular_name' => 'country',
+			),			
 		));
 		
 		/**
