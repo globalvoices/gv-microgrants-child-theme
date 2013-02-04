@@ -28,6 +28,7 @@ h3 a
 .post a,
 .homepage-grid .widget-contents a,
 .taxonomy-list a,
+.widget_gv_banner_rss .widget-contents a,
 .text-blue-medium {
 	color: #417eb9;	
 }
