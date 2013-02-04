@@ -26,6 +26,8 @@ h3 a
 }
 #TEXT-BLUE-MEDIUM,
 .post a,
+.homepage-grid .widget-contents a,
+.taxonomy-list a,
 .text-blue-medium {
 	color: #417eb9;	
 }
