@@ -69,6 +69,7 @@ h3 a
 	the credit no longer takes up space*/
 	width: 100%;
 }
-#post-archive .credit-text {
+#post-archive .credit-text,
+.widget-gv-monthly-archives {
 	display: none;
 }
