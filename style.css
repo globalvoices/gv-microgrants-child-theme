@@ -74,3 +74,9 @@ h3 a
 .widget-gv-monthly-archives {
 	display: none;
 }
+
+/*Hide Creative Commons Messages*/
+#footer #license,
+.postfooter .license {
+	display: none;
+}
