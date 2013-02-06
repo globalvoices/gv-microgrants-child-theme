@@ -65,7 +65,7 @@ if (isset($gv) AND is_object($gv)) :
 		 */
 		x_add_metadata_field( 'proposal-tools', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Describe the technologies and digital tools that the project participants will use to produce the content?',
+			'label' => 'Please describe any technologies and digital tools that you plan to use in the trainings that may not be listed above.',
 			'field_type' => 'textarea',
 		));
 		/**
@@ -209,16 +209,16 @@ if (isset($gv) AND is_object($gv)) :
 		));
 		
 		gv_register_postmeta_insert(array(
-			'postmeta_field_name' => 'proposal-tools',
-			'label' => 'Describe the technologies and digital tools that the project participants will use to produce the content?',
-			'position' => 'bottom',
-		));
-		
-		gv_register_postmeta_insert(array(
 			'taxonomy' => 'gv_tools',
-			'label' => 'Tools:',
+			'label' => 'What technologies and digital tools do you plan to use in the trainings?',
 			'position' => 'bottom',
 		));		
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-tools',
+			'label' => 'Other tools',
+			'position' => 'bottom',
+		));
 		
 		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-connections',
