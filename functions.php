@@ -330,6 +330,7 @@ if (isset($gv) AND is_object($gv)) :
 				  ),			
 			'public' => true,
 			'show_ui' => true,
+			'update_count_callback' => '_update_post_term_count',
 			'hierarchical' => true,
 			'query_var' => 'geo',
 			'rewrite' => array(
@@ -356,7 +357,8 @@ if (isset($gv) AND is_object($gv)) :
 				  ),			
 			'public' => true,
 			'show_ui' => true,
-			'hierarchical' => true,
+			'update_count_callback' => '_update_post_term_count',			
+			'hierarchical' => true,			
 			'query_var' => 'topic',
 			'rewrite' => array(
 				'slug' => 'topic'
