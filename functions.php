@@ -330,7 +330,9 @@ if (isset($gv) AND is_object($gv)) :
 				  ),			
 			'public' => true,
 			'show_ui' => true,
+			// fixes http://core.trac.wordpress.org/ticket/14084
 			'update_count_callback' => '_update_post_term_count',
+			'show_admin_column' => true,
 			'hierarchical' => true,
 			'query_var' => 'geo',
 			'rewrite' => array(
@@ -357,7 +359,9 @@ if (isset($gv) AND is_object($gv)) :
 				  ),			
 			'public' => true,
 			'show_ui' => true,
-			'update_count_callback' => '_update_post_term_count',			
+			// fixes http://core.trac.wordpress.org/ticket/14084
+			'update_count_callback' => '_update_post_term_count',
+			'show_admin_column' => true,
 			'hierarchical' => true,			
 			'query_var' => 'topic',
 			'rewrite' => array(
@@ -385,6 +389,9 @@ if (isset($gv) AND is_object($gv)) :
 				  ),
 			'public' => true,
 			'show_ui' => true,
+			// fixes http://core.trac.wordpress.org/ticket/14084
+			'update_count_callback' => '_update_post_term_count',
+			'show_admin_column' => true,			
 			'hierarchical' => true,
 			'query_var' => 'tools',
 			'rewrite' => array(
