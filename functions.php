@@ -85,6 +85,70 @@ if (isset($gv) AND is_object($gv)) :
 			'field_type' => 'textarea',
 		));
 		/**
+		 * Proposal Technical
+		 */
+		x_add_metadata_field( 'proposal-technical', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Describe which technologies, tools, and media you will focus on when training participants.',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Facilities
+		 */
+		x_add_metadata_field( 'proposal-facilities', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Describe the facilities where you will hold the workshops.',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Relationship
+		 */
+		x_add_metadata_field( 'proposal-relationship', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'What is your current relationship with the community with whom you plan to work? What makes you the most appropriate individual or organization to implement this project?',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Challenges
+		 */
+		x_add_metadata_field( 'proposal-challenges', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'What specific challenges do you expect to face when planning and implementing your project?',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Impact
+		 */
+		x_add_metadata_field( 'proposal-impact', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'How will you measure and evaluate the project’s impact, specifically: your primary participants, the wider regional community, or the global digital community?',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Timeline
+		 */
+		x_add_metadata_field( 'proposal-timeline', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => ' If your project were to be selected as a Rising Voices grantee, what would be the general timeline of project activities in 2013?',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Budget
+		 */
+		x_add_metadata_field( 'proposal-budget', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Detail a specific budget of up to $4,000 USD for operating costs.',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Total money requested
+		 */
+		x_add_metadata_field( 'proposal-total', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Total amount you are requesting (in US dollars)',
+			'field_type' => 'text',
+		));
+		/**
 		 * Proposal Other Resources
 		 */
 		x_add_metadata_field( 'proposal-otherresources', array('post'), array(
@@ -109,6 +173,22 @@ if (isset($gv) AND is_object($gv)) :
 			'field_type' => 'text',
 		));
 		/**
+		 * Proposal Mailing address
+		 */
+		x_add_metadata_field( 'proposal-address', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Mailing Address',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Telephone number
+		 */
+		x_add_metadata_field( 'proposal-number', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Telephone Number',
+			'field_type' => 'text',
+		));
+		/**
 		 * Proposal Email
 		 */
 		x_add_metadata_field( 'proposal-email', array('post'), array(
@@ -122,6 +202,30 @@ if (isset($gv) AND is_object($gv)) :
 		x_add_metadata_field( 'proposal-organization', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
 			'label' => 'Organization',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Video URL
+		 */
+		x_add_metadata_field( 'proposal-video', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Video URL (optional)',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Audio URL
+		 */
+		x_add_metadata_field( 'proposal-audio', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Audio URL (optional)',
+			'field_type' => 'text',
+		));
+		/**
+		 * Proposal Photographs URL
+		 */
+		x_add_metadata_field( 'proposal-photos', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Photographs URL (optional)',
 			'field_type' => 'text',
 		));
 		/**
