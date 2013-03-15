@@ -345,6 +345,48 @@ if (isset($gv) AND is_object($gv)) :
 		));
 
 		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-technical',
+			'label' => 'Describe which technologies, tools, and media you will focus on when training participants.',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-facilities',
+			'label' => 'Describe the facilities where you will hold the workshops.',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-relationship',
+			'label' => 'What is your current relationship with the community with whom you plan to work? What makes you the most appropriate individual or organization to implement this project?',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-challenges',
+			'label' => 'What specific challenges do you expect to face when planning and implementing your project?',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-impact',
+			'label' => 'How will you measure and evaluate the project’s impact, specifically: your primary participants, the wider regional community, or the global digital community?',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-timeline',
+			'label' => ' If your project were to be selected as a Rising Voices grantee, what would be the general timeline of project activities in 2013?',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-budget',
+			'label' => 'Detail a specific budget of up to $4,000 USD for operating costs.',
+			'position' => 'bottom',
+		));
+		
+		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-otherresources',
 			'label' => 'Besides the microgrant funding, what other resources and support are you seeking for your project to ensure its success?',
 			'position' => 'bottom',
