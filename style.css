@@ -48,7 +48,7 @@ h3 a
 	background: -o-linear-gradient(top, #ffa352, #f78f0f); /* Opera 11.10+ */
 }
 #TEXT-SHADOW-MEDIUM-ORANGE-BACKGROUND,
-.header-menu a,
+#header-menu .menu ul a,
 #sidebar h2,
 .foot-container,
 .foot-container a,
@@ -57,7 +57,11 @@ h3 a
 	color: #fff;
 	text-shadow: 1px 1px 2px rgb(170, 98, 10);
 	}
-
+#PALE-ORANGE-BORDER,
+.header-menu li,
+.pale-orange-border {
+	border-color: #FFBC69;
+}
 /*Hide post authors*/
 .single .single-credit {
 	/* Hide credits from top of posts and excerpts
