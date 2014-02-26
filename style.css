@@ -14,7 +14,7 @@ Template: gv-project-theme
 #ORANGE-TEXT-MEDIUM,
 a:hover,
 a:active  {
-	color: #f7941e; /*Orange*/
+	color: #98CF71; /*Orange*/
 /*	color: #e17a00;*/
 }
 #ORANGE-TEXT-DARK,
@@ -22,7 +22,7 @@ a,
 h2 a,
 h3 a
 .text-orange-dark {
-	color: #e17a00;
+	color: #81B85A;
 }
 #TEXT-BLUE-MEDIUM,
 .post a,
@@ -38,14 +38,10 @@ h3 a
 .foot-container,
 .medium-grey-gradient {
 /*http://css-tricks.com/examples/CSS3Gradient/*/
-	background-color: #ffa352;
-	border-color: #f78f0f;
 	border-width: 0px;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffa352), to(#f78f0f)); /* Safari 4-5, Chrome 1-9 */
-	background: -webkit-linear-gradient(top, #ffa352, #f78f0f); /* Safari 5.1, Chrome 10+ */
-	background: -moz-linear-gradient(top, #ffa352, #f78f0f); /* Firefox 3.6+ */
-	background: -ms-linear-gradient(top, #ffa352, #f78f0f); /* IE 10 */
-	background: -o-linear-gradient(top, #ffa352, #f78f0f); /* Opera 11.10+ */
+	background: none;
+	background-color: #81B85A;
+	border-radius: 0;
 }
 #TEXT-SHADOW-MEDIUM-ORANGE-BACKGROUND,
 #header-menu .menu ul a,
@@ -55,12 +51,12 @@ h3 a
 .foot-container h2,
 .text-shadow-medium-orange-background {
 	color: #fff;
-	text-shadow: 1px 1px 2px rgb(170, 98, 10);
+	text-shadow: 1px 1px 2px #2E7A16;
 	}
 #PALE-ORANGE-BORDER,
 .header-menu li,
 .pale-orange-border {
-	border-color: #FFBC69;
+	border-color: #98CF71;
 }
 /*Hide post authors*/
 .single .single-credit {
