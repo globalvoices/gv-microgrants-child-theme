@@ -617,6 +617,21 @@ if (isset($gv) AND is_object($gv)) :
 		}
 		add_filter('gv_display_post_terms_before', 'gv_news_filter_display_post_terms_before', 10, 2);
 		
+		/**
+		 * Filter tag cloud widget arguments to remove limit on number to show
+		 * 
+		 * 
+		 * @see WP_Widget_Tag_Cloud Widget class for the tag cloud widget
+		 * @param array $args All default arguments
+		 * @return array Modified arguments
+		 */
+		function gv_microgrants_filter_widget_tag_cloud_args($args) {
+			$args['number'] = 0;
+			
+			return $args;
+		}
+		add_filter('widget_tag_cloud_args', 'gv_microgrants_filter_widget_tag_cloud_args');
+		
 	}
 	add_filter('init', 'gv_microgrants_register_taxonomies');
 	
