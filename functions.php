@@ -49,7 +49,15 @@ if (isset($gv) AND is_object($gv)) :
 		 */
 		x_add_metadata_field( 'proposal-community', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Describe the specific community with whom you will be working',
+			'label' => 'Describe the specific population with whom you will be working',
+			'field_type' => 'textarea',
+		));
+		/**
+		 * Proposal Team
+		 */
+		x_add_metadata_field( 'proposal-team', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Who else will be on your team to help implement the project?',
 			'field_type' => 'textarea',
 		));
 		/**
@@ -310,7 +318,13 @@ if (isset($gv) AND is_object($gv)) :
 		
 		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-community',
-			'label' => 'Describe the specific community with whom you will be working.',
+			'label' => 'Describe the specific population with whom you will be working.',
+			'position' => 'bottom',
+		));
+
+		gv_register_postmeta_insert(array(
+			'postmeta_field_name' => 'proposal-team',
+			'label' => 'Who else will be on your team to help implement the project?',
 			'position' => 'bottom',
 		));
 		
