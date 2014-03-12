@@ -32,11 +32,22 @@ if (isset($gv) AND is_object($gv)) :
 	 * Convert to some other format if this ever stops working
 	 */
 	function gv_microgrants_custom_metadata_manager_admin_init() {
+		
+		/**
+		 * Exit if GV_MICROGRANTS_METADATA_DEFINED constant is true, it means the questions
+		 * were already defined in a plugin.
+		 * 
+		 * Expected for old sites using this theme so they can keep their questions
+		 */
+		if (defined('GV_MICROGRANTS_METADATA_DEFINED'))
+			return;
+		
 		/**
 		 * Exit if the plugin isn't present
 		 */
 		if(!function_exists( 'x_add_metadata_field' ) OR !function_exists( 'x_add_metadata_group' ) )
 			return;
+		
 		/**
 		 * Register a group for pages and posts
 		 */
@@ -286,7 +297,7 @@ if (isset($gv) AND is_object($gv)) :
 	//		'field_type' => 'checkbox',
 	//	));	
 	}
-	add_action( 'admin_init', 'gv_microgrants_custom_metadata_manager_admin_init' );
+	add_action( 'admin_init', 'gv_microgrants_custom_metadata_manager_admin_init', 15);
 
 	/**
 	 * Register postmeta inserts
@@ -298,6 +309,15 @@ if (isset($gv) AND is_object($gv)) :
 		if (!function_exists('gv_register_postmeta_insert'))
 			return;
 
+		/**
+		 * Exit if GV_MICROGRANTS_POSTMETA_INSERTS_DEFINED constant is true, it means the questions
+		 * were already defined in a plugin.
+		 * 
+		 * Expected for old sites using this theme so they can keep their questions
+		 */
+		if (defined('GV_MICROGRANTS_POSTMETA_INSERTS_DEFINED'))
+			return;
+		
 		gv_register_postmeta_insert(array(
 			'taxonomy' => 'gv_topics',
 			'label' => 'Topical focus:',
@@ -444,7 +464,7 @@ if (isset($gv) AND is_object($gv)) :
 		));
 
 	}
-	add_action('init', 'gv_microgrants_register_postmeta_inserts');
+	add_action('init', 'gv_microgrants_register_postmeta_inserts', 15);
 
 	/**
 	 * Insert "Long Description" h3 above post content
