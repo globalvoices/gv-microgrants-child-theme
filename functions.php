@@ -80,14 +80,6 @@ if (isset($gv) AND is_object($gv)) :
 			'field_type' => 'textarea',
 		));
 		/**
-		 * Proposal Tools
-		 */
-		x_add_metadata_field( 'proposal-tools', array('post'), array(
-			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Please describe any technologies and digital tools that you plan to use in the trainings that may not be listed above.',
-			'field_type' => 'textarea',
-		));
-		/**
 		 * Proposal Connections
 		 */
 		x_add_metadata_field( 'proposal-connections', array('post'), array(
