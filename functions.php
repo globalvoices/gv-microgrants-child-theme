@@ -84,7 +84,7 @@ if (isset($gv) AND is_object($gv)) :
 		 */
 		x_add_metadata_field( 'proposal-connections', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Describe the connections that you or your organization have already established that will contribute to the success of the project',
+			'label' => 'Describe the connections that you or your organization have already established or plan to establish that will contribute to the success of the project.',
 			'field_type' => 'textarea',
 		));
 		/**
@@ -336,7 +336,7 @@ if (isset($gv) AND is_object($gv)) :
 		
 		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-connections',
-			'label' => 'Describe the connections that you or your organization have already established that will contribute to the success of the project.',
+			'label' => 'Describe the connections that you or your organization have already established or plan to establish that will contribute to the success of the project.',
 			'position' => 'bottom',
 		));
 		
