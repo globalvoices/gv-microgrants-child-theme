@@ -224,30 +224,6 @@ if (isset($gv) AND is_object($gv)) :
 			'field_type' => 'text',
 		));
 		/**
-		 * Proposal Video URL
-		 */
-		x_add_metadata_field( 'proposal-video', array('post'), array(
-			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Video URL (optional)',
-			'field_type' => 'text',
-		));
-		/**
-		 * Proposal Audio URL
-		 */
-		x_add_metadata_field( 'proposal-audio', array('post'), array(
-			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Audio URL (optional)',
-			'field_type' => 'text',
-		));
-		/**
-		 * Proposal Photographs URL
-		 */
-		x_add_metadata_field( 'proposal-photos', array('post'), array(
-			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Photographs URL (optional)',
-			'field_type' => 'text',
-		));
-		/**
 		 * Proposal URL
 		 */
 		x_add_metadata_field( 'proposal-url', array('post'), array(
