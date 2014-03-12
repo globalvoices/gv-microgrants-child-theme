@@ -148,7 +148,7 @@ if (isset($gv) AND is_object($gv)) :
 		 */
 		x_add_metadata_field( 'proposal-timeline', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => ' If your project were to be selected as a Rising Voices grantee, what would be the general timeline of project activities in 2013?',
+			'label' => ' If your project were to be selected as a Rising Voices grantee, what would be the general timeline of project activities in 2014?',
 			'field_type' => 'textarea',
 		));
 		/**
@@ -156,7 +156,7 @@ if (isset($gv) AND is_object($gv)) :
 		 */
 		x_add_metadata_field( 'proposal-budget', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Detail a specific budget of up to $4,000 USD for operating costs.',
+			'label' => 'Detail a specific budget of up to $2,500 USD for operating costs.',
 			'field_type' => 'textarea',
 		));
 		/**
@@ -410,13 +410,13 @@ if (isset($gv) AND is_object($gv)) :
 		
 		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-timeline',
-			'label' => ' If your project were to be selected as a Rising Voices grantee, what would be the general timeline of project activities in 2013?',
+			'label' => ' If your project were to be selected as a Rising Voices grantee, what would be the general timeline of project activities in 2014?',
 			'position' => 'bottom',
 		));
 		
 		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-budget',
-			'label' => 'Detail a specific budget of up to $4,000 USD for operating costs.',
+			'label' => 'Detail a specific budget of up to $2,500 USD for operating costs.',
 			'position' => 'bottom',
 		));
 		
