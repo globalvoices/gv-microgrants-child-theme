@@ -164,7 +164,7 @@ if (isset($gv) AND is_object($gv)) :
 		 */
 		x_add_metadata_field( 'proposal-otherresources', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => 'Besides the microgrant funding, what other resources and support are you seeking for your project to ensure its success?',
+			'label' => 'Besides the microgrant funding, what other support can Rising Voices provide for your project to ensure its success?',
 			'field_type' => 'textarea',
 		));
 		/**
@@ -390,7 +390,7 @@ if (isset($gv) AND is_object($gv)) :
 		
 		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-otherresources',
-			'label' => 'Besides the microgrant funding, what other resources and support are you seeking for your project to ensure its success?',
+			'label' => 'Besides the microgrant funding, what other support can Rising Voices provide for your project to ensure its success?',
 			'position' => 'bottom',
 		));
 		
