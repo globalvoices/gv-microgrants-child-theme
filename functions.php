@@ -92,7 +92,7 @@ if (isset($gv) AND is_object($gv)) :
 		 */
 		x_add_metadata_field( 'proposal-participants', array('post'), array(
 			'group' => 'gv_custom_metadata_posts',
-			'label' => 'How many participants do you think will be involved in your project?',
+			'label' => 'How many participants do you think will be trained in your project?',
 			'field_type' => 'textarea',
 		));
 		/**
@@ -342,7 +342,7 @@ if (isset($gv) AND is_object($gv)) :
 		
 		gv_register_postmeta_insert(array(
 			'postmeta_field_name' => 'proposal-participants',
-			'label' => 'How many participants do you think will be involved in your project?',
+			'label' => 'How many participants do you think will be trained in your project?',
 			'position' => 'bottom',
 		));
 
