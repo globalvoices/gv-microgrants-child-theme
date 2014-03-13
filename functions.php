@@ -240,6 +240,14 @@ if (isset($gv) AND is_object($gv)) :
 			'field_type' => 'text',
 		));
 		/**
+		 * Proposal First Time
+		 */
+		x_add_metadata_field( 'proposal-firsttime', array('post'), array(
+			'group' => 'gv_custom_metadata_posts',
+			'label' => 'Is this the first time that you have applied for a Rising Voices microgrant?',
+			'field_type' => 'text',
+		));
+		/**
 		 * Proposal Private
 		 */
 		x_add_metadata_field( 'proposal-private', array('post'), array(
