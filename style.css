@@ -11,18 +11,18 @@ Template: gv-project-theme
 
 @import url("../gv-project-theme/style.css");
 
-#LIGHT-APPLE-GREEN-TEXT,
+#LIGHT-FOREST-GREEN-TEXT,
 a:hover,
 a:active,
-.light-apple-green-text {
-	color: #98CF71;
+.light-forest-green-text {
+	color: #2EBE2E;
 }
-#APPLE-GREEN-TEXT,
+#FOREST-GREEN-TEXT,
 a,
 h2 a,
-h3 a
-.apple-green-text {
-	color: #81B85A;
+h3 a,
+.forest-green-text {
+	color: #269926;
 }
 #TEXT-BLUE-MEDIUM,
 .post a,
@@ -32,14 +32,14 @@ h3 a
 .text-blue-medium {
 	color: #417eb9;	
 }
-#APPLE-GREEN-BACKGROUND,
+#FOREST-GREEN-BACKGROUND, 
 .header-menu-container,
 #sidebar h2,
 .foot-container,
-.apple-green-background {
+.forest-green-background {
 	border-width: 0px;
 	background: none;
-	background-color: #81B85A;
+	background-color: #2DAE2D; /*lightened forest green*/
 	border-radius: 0;
 }
 #TEXT-SHADOW-APPLE-GREEN-BACKGROUND,
