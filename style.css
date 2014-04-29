@@ -11,17 +11,17 @@ Template: gv-project-theme
 
 @import url("../gv-project-theme/style.css");
 
-#ORANGE-TEXT-MEDIUM,
+#LIGHT-APPLE-GREEN-TEXT,
 a:hover,
-a:active  {
-	color: #98CF71; /*Orange*/
-/*	color: #e17a00;*/
+a:active,
+.light-apple-green-text {
+	color: #98CF71;
 }
-#ORANGE-TEXT-DARK,
+#APPLE-GREEN-TEXT,
 a,
 h2 a,
 h3 a
-.text-orange-dark {
+.apple-green-text {
 	color: #81B85A;
 }
 #TEXT-BLUE-MEDIUM,
@@ -32,30 +32,29 @@ h3 a
 .text-blue-medium {
 	color: #417eb9;	
 }
-#MEDIUM-ORANGE-GRADIENT,
+#APPLE-GREEN-BACKGROUND,
 .header-menu-container,
 #sidebar h2,
 .foot-container,
-.medium-grey-gradient {
-/*http://css-tricks.com/examples/CSS3Gradient/*/
+.apple-green-background {
 	border-width: 0px;
 	background: none;
 	background-color: #81B85A;
 	border-radius: 0;
 }
-#TEXT-SHADOW-MEDIUM-ORANGE-BACKGROUND,
+#TEXT-SHADOW-APPLE-GREEN-BACKGROUND,
 #header-menu .menu ul a,
 #sidebar h2,
 .foot-container,
 .foot-container a,
 .foot-container h2,
-.text-shadow-medium-orange-background {
+.text-shadow-apple-green-background {
 	color: #fff;
 	text-shadow: 1px 1px 2px #2E7A16;
 	}
-#PALE-ORANGE-BORDER,
+#LIGHT-APPLE-GREEN-BORDER,
 .header-menu li,
-.pale-orange-border {
+.light-apple-green-border {
 	border-color: #98CF71;
 }
 /*Hide post authors*/
