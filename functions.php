@@ -24,7 +24,7 @@ if (isset($gv) AND is_object($gv)) :
 	 * Define an image to show in the header.
 	 * Project theme generic has none, so it will use site title
 	 */
-	$gv->settings['header_img'] = get_stylesheet_directory_uri() . '/RisingVoices-microgrants2013-600.png';	
+	$gv->settings['header_img'] = get_stylesheet_directory_uri() . '/RisingVoices-microgrants-amazonia-600.png';	
 	
 	/**
 	 * Register custom postmeta fields with the Custom Medatata Manager plugin
