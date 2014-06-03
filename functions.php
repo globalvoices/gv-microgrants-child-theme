@@ -882,6 +882,20 @@ if (isset($gv) AND is_object($gv)) :
 			"url" => "http://www.omidyar.com/",
 			'status' => 'featured',
 			),
+		'avina' => array(
+			"name" => "Avina Americas",
+			"slug" => "avina",
+			'description' => 'Avina Americas\' mission is to impact sustainable development in Latin America and beyond by engaging U.S. actors in shared strategies for action which contribute to the common good. ',
+			"url" => "http://http://www.avinaamericas.org/",
+			'status' => 'featured',
+			),
+		'skoll' => array(
+			"name" => "Skoll Foundation",
+			"slug" => "skoll",
+			'description' => 'The Skoll Foundation invests in, connects, and celebrates social entrepreneurs and the innovators who help them solve the world’s most pressing problems.',
+			"url" => "http://www.skollfoundation.org/",
+			'status' => 'featured',
+			),
 //		'hivos' => array(
 //			"name" => "Hivos",
 //			"slug" => "hivos",
