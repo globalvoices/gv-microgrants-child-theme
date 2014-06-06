@@ -11,51 +11,47 @@ Template: gv-project-theme
 
 @import url("../gv-project-theme/style.css");
 
-#LIGHT-FOREST-GREEN-TEXT,
+#LIGHT-AMAZONIA-GREEN-TEXT,
 a:hover,
 a:active,
-.light-forest-green-text {
-	color: #2EBE2E;
+.light-amazonia-green-text {
+	color: #D26D0C;
 }
-#FOREST-GREEN-TEXT,
+#AMAZONIA-GREEN-TEXT,
 a,
 h2 a,
 h3 a,
-.forest-green-text {
-	color: #269926;
-}
-#TEXT-BLUE-MEDIUM,
 .post a,
 .homepage-grid .widget-contents a,
 .taxonomy-list a,
 .widget_gv_banner_rss .widget-contents a,
-.text-blue-medium {
-	color: #417eb9;	
+.amazonia-green-text {
+	color: #D26D0C;
 }
-#FOREST-GREEN-BACKGROUND, 
+#AMAZONIA-GREEN-BACKGROUND, 
 .header-menu-container,
 #sidebar h2,
 .foot-container,
-.forest-green-background {
+.amazonia-green-background {
 	border-width: 0px;
 	background: none;
-	background-color: #2DAE2D; /*lightened forest green*/
+	background-color: #3F8924; /*lightened forest green*/
 	border-radius: 0;
 }
-#TEXT-SHADOW-APPLE-GREEN-BACKGROUND,
+#TEXT-SHADOW-AMAZONIA-GREEN-BACKGROUND,
 #header-menu .menu ul a,
 #sidebar h2,
 .foot-container,
 .foot-container a,
 .foot-container h2,
-.text-shadow-apple-green-background {
+.text-shadow-amazonia-green-background {
 	color: #fff;
-	text-shadow: 1px 1px 2px #2E7A16;
+	text-shadow: 1px 1px 2px #306D1A;
 	}
-#LIGHT-APPLE-GREEN-BORDER,
+#LIGHT-AMAZONIA-GREEN-BORDER,
 .header-menu li,
-.light-apple-green-border {
-	border-color: #98CF71;
+.light-amazonia-green-border {
+	border-color: #6AA454;
 }
 /*Hide post authors*/
 .single .single-credit {
