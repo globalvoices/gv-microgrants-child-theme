@@ -883,8 +883,15 @@ if (isset($gv) AND is_object($gv)) :
 			'status' => 'featured',
 			),
 		'avina' => array(
-			"name" => "Avina Americas",
+			"name" => "Avina",
 			"slug" => "avina",
+			'description' => 'Avina is a Latin American foundation that identifies opportunities to achieve systemic change relevant for sustainable development, by connecting and empowering people and institutions in shared agendas for action.',
+			"url" => "http://www.avina.net/eng/",
+			'status' => 'featured',
+			),
+		'avina-americas' => array(
+			"name" => "Avina Americas",
+			"slug" => "avina-americas",
 			'description' => 'Avina Americas\' mission is to impact sustainable development in Latin America and beyond by engaging U.S. actors in shared strategies for action which contribute to the common good. ',
 			"url" => "http://http://www.avinaamericas.org/",
 			'status' => 'featured',
