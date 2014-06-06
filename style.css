@@ -14,19 +14,20 @@ Template: gv-project-theme
 #LIGHT-AMAZONIA-GREEN-TEXT,
 a:hover,
 a:active,
+h2 a:hover,
+h2 a:active,
+.widget_gv_banner_rss .widget-contents a,
 .light-amazonia-green-text {
-	color: #D26D0C;
+	color: #30B600;
 }
 #AMAZONIA-GREEN-TEXT,
 a,
 h2 a,
 h3 a,
-.post a,
-.homepage-grid .widget-contents a,
-.taxonomy-list a,
 .widget_gv_banner_rss .widget-contents a,
 .amazonia-green-text {
-	color: #D26D0C;
+	color: #299B00;
+	font-weight: bold;
 }
 #AMAZONIA-GREEN-BACKGROUND, 
 .header-menu-container,
