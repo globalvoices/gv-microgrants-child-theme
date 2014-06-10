@@ -875,13 +875,6 @@ if (isset($gv) AND is_object($gv)) :
 	 * Sponsors definition to be used by gv_get_sponsors()
 	 */
 	$gv->sponsors = array(
-		'omidyar' => array(
-			"name" => "Omidyar Network",
-			"slug" => "omidyar",
-			'description' => 'Omidyar Network - Every person has the power to make a difference.',
-			"url" => "http://www.omidyar.com/",
-			'status' => 'featured',
-			),
 		'avina' => array(
 			"name" => "Avina",
 			"slug" => "avina",
