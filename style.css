@@ -11,49 +11,64 @@ Template: gv-project-theme
 
 @import url("../gv-project-theme/style.css");
 
-#LIGHT-AMAZONIA-GREEN-TEXT,
-a:hover,
-a:active,
-h2 a:hover,
-h2 a:active,
-.widget_gv_banner_rss .widget-contents a,
-.light-amazonia-green-text {
-	color: #30B600;
-}
-#AMAZONIA-GREEN-TEXT,
-a,
-h2 a,
-h3 a,
-.widget_gv_banner_rss .widget-contents a,
-.amazonia-green-text {
-	color: #299B00;
-	font-weight: bold;
+#WHITE-BACKGROUND,
+.header-container,
+.white-background {
+	background-color: #fff;
 }
 #AMAZONIA-GREEN-BACKGROUND, 
-.header-menu-container,
-#sidebar h2,
-.foot-container,
+.header-nav-bar-container,
 .amazonia-green-background {
 	border-width: 0px;
 	background: none;
 	background-color: #3F8924; /*lightened forest green*/
 	border-radius: 0;
 }
+#AMAZONIA-GREEN-HIGHLIGHT-BORDER,
+.header-nav-bar li,
+.header-nav-bar-container input,
+.amazonia-green-highlight-border {
+	/* Lightest shade of green from medium-green-gradient*/
+	border-color: #6AA454;
+}
 #TEXT-SHADOW-AMAZONIA-GREEN-BACKGROUND,
-#header-menu .menu ul a,
-#sidebar h2,
-.foot-container,
-.foot-container a,
-.foot-container h2,
+#header-menu,
+#header-menu a,
 .text-shadow-amazonia-green-background {
 	color: #fff;
 	text-shadow: 1px 1px 2px #306D1A;
 	}
-#LIGHT-AMAZONIA-GREEN-BORDER,
-.header-menu li,
-.light-amazonia-green-border {
-	border-color: #6AA454;
-}
+#AMAZONIA-GREEN-TEXT,
+a,
+h3 a,
+a,
+.menu-opened .menu-toggle,
+.menu-toggle:hover,
+.taxonomy-list-header-opened .taxonomy-list-toggle,
+.screen-title a:hover,
+.taxonomy-list a:hover,
+.taxonomy-tabs-container .term-union-link a,
+.post-description a:hover,
+.meta-term-subterms .active-term a,
+.share-links-icons .icon:hover,
+#comments #respond #commentform a:hover,
+#page-navigation a:hover,
+.amazonia-green-text {
+	color: #299B00;
+	}
+#LIGHT-AMAZONIA-GREEN-TEXT,
+#page-navigation a,
+a:hover,
+.edit a,
+.post-terms-taxonomy a,
+#comments .edit a,
+#cancel-comment-reply-link,
+.warning a,
+.light-amazonia-green-text {
+	color: #30B600;
+	}
+
+
 /*Hide post authors*/
 .single .single-credit {
 	/* Hide credits from top of posts and excerpts
@@ -75,4 +90,49 @@ h3 a,
 #footer #license,
 .postfooter .license {
 	display: none;
+}
+
+/*Site title sizing + media queries from RV child theme*/
+.site-title {
+	width: 360px;
+	max-width: 360px;
+	}
+@media
+/*only screen BIGGER THAN 1008px {*/
+only screen and (min-width: 1008px) {
+	.header-nav-bar li {
+		font-size: 18px;
+		font-size: 1.15rem;
+	}
+}
+@media
+/*only screen and (max-width: 960px) {*/
+only screen and (max-width: 1008px) {
+	.site-title {
+		width: 300px;
+		max-width: 300px;
+	}	
+}
+/*Anything smaller than 720px*/
+@media
+only screen and (max-width: 720px) {	
+	.site-title {
+		width: 180px;
+		max-width: 180px;
+	}
+}
+@media
+only screen and (max-width: 552px) {
+	.site-title {
+/*		width: 120px;
+		max-width: 120px;*/
+	}
+}
+/*Anything smaller than 480 - iPhone landscape*/
+@media
+only screen and (max-width: 481px) {	
+}
+/*Anything smaller than 360: iPhone portrait */
+@media
+only screen and (max-width: 360px) {		
 }
