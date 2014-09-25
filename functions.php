@@ -15,6 +15,12 @@ if (isset($gv) AND is_object($gv)) :
 		define('GV_LINGUA',  FALSE);
 	
 	/**
+	 * For geo mashup plugin show excerpts instead of thumbnails
+	 */
+	add_filter('gv_geo_mashup_show_thumbnail', '__return_false');
+	add_filter('gv_geo_mashup_show_excerpt', '__return_true');
+	
+	/**
 	 * Define excerpt length
 	 */
 	if (!defined('GV_EXCERPT_LENGTH'))
