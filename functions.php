@@ -19,6 +19,11 @@ if (isset($gv) AND is_object($gv)) :
 	 */
 	add_filter('gv_geo_mashup_show_thumbnail', '__return_false');
 	add_filter('gv_geo_mashup_show_excerpt', '__return_true');
+
+	/**
+	 * OPTIONAL: Geo Mashup filter to show map in postmeta sidebar
+	 */
+	add_filter('gv_geo_mashup_show_map', '__return_true');
 	
 	/**
 	 * Define excerpt length
