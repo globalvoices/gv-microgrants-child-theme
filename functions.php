@@ -832,17 +832,6 @@ if (isset($gv) AND is_object($gv)) :
 		);
 	}
 	add_filter('after_setup_theme', 'gv_news_register_theme_strings');
-	
-	/**
-	 * Filter the apple touch icon to be a customized logo
-	 * 
-	 * @param string $icon Default icon
-	 * @return string desired icon
-	 */
-//	function gvadvocacy_theme_gv_apple_touch_icon($icon) {
-//		return gv_get_dir('theme_images') ."gv-advocacy-apple-touch-icon-precomposed-300.png";
-//	}
-//	add_filter('gv_apple_touch_icon', 'gvadvocacy_theme_gv_apple_touch_icon');
 
 	/**
 	 * Filter the og:image (facebook/g+) default icon to be an RV logo
@@ -865,28 +854,7 @@ if (isset($gv) AND is_object($gv)) :
 		return gv_get_dir('theme_images') ."rv-logo-square-600.png";
 	}
 //	add_filter('gv_og_image', 'gvadvocacy_theme_gv_og_image');
-	
-	/**
-	 * Define the hierarchical structure of the taxonomy by its parents
-	 */
-//	$gv->taxonomy_outline = array(
-//		'countries' => 1,
-//		'topics' => 1,
-//		'special' => 1,
-//		'type' => 1,
-//	);
 
-	/**
-	 * Define Categories to be inserted into post data before returning content for translation during fetch
-	 * @see gv_lingua::reply_to_ping()
-	 */
-//	$gv->lingua_site_categories[] = 'gv-advocacy';
-
-	/**
-	 * Set a custom site description using a lingua string. To be used in social media sharing etc.
-	 */
-//	$gv->site_description = "A project of Global Voices Online, we seek to build a global anti-censorship network of bloggers and online activists dedicated to protecting freedom of expression and free access to information online.";
-	
 	/**
 	 * Sponsors definition to be used by gv_get_sponsors()
 	 */
@@ -912,62 +880,7 @@ if (isset($gv) AND is_object($gv)) :
 			"url" => "http://www.skollfoundation.org/",
 			'status' => 'featured',
 			),
-//		'hivos' => array(
-//			"name" => "Hivos",
-//			"slug" => "hivos",
-//			"description" => 'Hivos, the Humanist Institute for Development Cooperation',
-//			"url" => "http://www.hivos.org/",
-//			"status" => 'featured',
-//			),		
-//		'knight' => array(
-//			"name" => "Knight Foundation",
-//			"slug" => "knight",
-//			"description" => 'John S. and James L. Knight Foundation',
-//			"url" => "http://www.knightfdn.org/",
-//			"status" => 'featured',
-//			),
-//		'fpu' => array(
-//			"name" => "Free Press Unlimited",
-//			"slug" => "fpu",
-//			"description" => 'Free Press Unlimited - People Deserve to Know',
-//			"url" => "http://www.freepressunlimited.org/",
-//			"status" => 'featured',
-//			),
-//		'osi' => array(
-//			"name" => "Open Society Institute",
-//			"slug" => "osi",
-//			"description" => 'Open Society Institute - Building vibrant and tolerant democracies.',
-//			"url" => "http://www.soros.org/",
-//			"status" => 'featured',
-//			),
-//		'heinrichboll' => array(
-//			"name" => "Heinrich Böll Stiftung",
-//			"slug" => "heinrichboll",
-//			"description" => 'Heinrich Böll Stiftung - Striving to promote democracy, civil society, equality and a healthy environment internationally.',
-//			"url" => "http://www.boell.org/",
-//			"status" => 'featured',
-//			),
 	);
-
-	/**
-	 * Define badgeset arrays for use with [gvbadges id="$slug"] shortcode
-	 */
-
-	/**
-	 * General GV Badges - Based on lingua site slug
-	 */
-//	$gv->badgesets['advocacy_general'] = array(
-//		'label' => "Global Voices Advocacy - Defending free speech online",
-//		'url' => "http://advocacy.globalvoicesonline.org/",
-//		'css' => "margin:3px 0;",
-//		'files' => array(
-//			'http://img.globalvoicesonline.org/Badges/advocacy/gv-advocacy-badge-125.gif',
-//			'http://img.globalvoicesonline.org/Badges/advocacy/gv-advocacy-badge-150.gif',
-//			'http://img.globalvoicesonline.org/Badges/advocacy/gv-advocacy-badge-200.gif',
-//			'http://img.globalvoicesonline.org/Badges/advocacy/gv-advocacy-badge-400.gif'
-//		),
-//	);
-
 	
 endif; // is_object($gv)
 
