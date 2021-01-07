@@ -1,15 +1,13 @@
 /*
 Theme Name: GV Microgrants Child Theme
-Theme URI: http://rising.globalvoicesonline.org/
+Theme URI: http://rising.globalvoices.org/
 Description: Child theme for the generic gv-project-theme for Rising Voices Microgrants.
 Version: 0.1
-Author: Erik Gyepes and Jeremy Clarke
-Author URI: http://globalvoicesonline.org/
-Template: gv-project-theme
+Author: Jer Clarke
+Author URI: http://globalvoices.org/
+Template: gv-theme
 
 */
-
-@import url("../gv-project-theme/style.css");
 
 #WHITE-BACKGROUND,
 .header-container,
