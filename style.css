@@ -9,6 +9,15 @@ Template: gv-theme
 
 */
 
+#WHITE-TEXT,
+/* .a11y-dialog-open, WHITE BACKGROUND, KEEP IT GREY */
+.header-nav-bar-container .header-nav-bar a,
+.header-nav-bar-container .header-nav-bar a:active,
+.header-nav-bar-container .header-nav-bar a:hover,
+.white-text {
+	color: #fff;
+}
+
 #WHITE-BACKGROUND,
 .header-container,
 .white-background {
@@ -30,8 +39,8 @@ Template: gv-theme
 	border-color: #6AA454;
 }
 #TEXT-SHADOW-AMAZONIA-GREEN-BACKGROUND,
-#header-menu,
-#header-menu a,
+.header-nav-bar li,
+.header-nav-bar a,
 .text-shadow-amazonia-green-background {
 	color: #fff;
 	text-shadow: 1px 1px 2px #306D1A;
@@ -46,9 +55,8 @@ a,
 .screen-title a:hover,
 .taxonomy-list a:hover,
 .taxonomy-tabs-container .term-union-link a,
-.post-description a:hover,
+.post-date a:hover,
 .meta-term-subterms .active-term a,
-.share-links-icons .icon:hover,
 #comments #respond #commentform a:hover,
 #page-navigation a:hover,
 .amazonia-green-text {
