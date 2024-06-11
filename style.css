@@ -10,7 +10,7 @@ Template: gv-theme
 */
 
 #WHITE-TEXT,
-/* .a11y-dialog-open, WHITE BACKGROUND, KEEP IT GREY */
+/* .header-container .a11y-dialog-open, WHITE BACKGROUND, KEEP IT GREY */
 .header-nav-bar-container .header-nav-bar a,
 .header-nav-bar-container .header-nav-bar a:active,
 .header-nav-bar-container .header-nav-bar a:hover,
@@ -49,12 +49,8 @@ Template: gv-theme
 a,
 h3 a,
 a,
-.menu-opened .menu-toggle,
-.menu-toggle:hover,
-.taxonomy-list-header-opened .taxonomy-list-toggle,
 .screen-title a:hover,
 .taxonomy-list a:hover,
-.taxonomy-tabs-container .term-union-link a,
 .post-date a:hover,
 .meta-term-subterms .active-term a,
 #comments #respond #commentform a:hover,
